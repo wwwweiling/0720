@@ -31,7 +31,9 @@ header img {
 nav {
   margin-bottom: 30px;
   border-top: 1px solid $color1;
-  border-bottom: 1px solid $color1; }
+  border-bottom: 1px solid $color1; 
+
+}
   nav ul {
     list-style-type: none;
     margin: 0;
@@ -39,7 +41,28 @@ nav {
     height: 80px;
     line-height: 80px;
     font-size: 28px;
-    display: flex; }
+    display: flex; 
+    justify-content: space-around;
+    text-align: center;
+}
+  
+  nav > ul > li {flex:1;
+  }
+
+  .flex01{display: flex;
+    flex-direction: column;
+}
+
+  .nav-store{position: relative;}
+  .flex01{
+    width: 100%;padding-top: 80px; display: none;
+  }
+// ul .flex01{}
+
+.nav-store:hover {background-color: $color1;}
+.nav-store:hover .flex01{display:flex ;}
+
+
   nav > ul > li > a {
     text-decoration: none;
     display: block; }
@@ -123,3 +146,5 @@ nav {
   .shop .item .right {
     width: 100%;
     margin-left: -4px; } }
+  
+  
